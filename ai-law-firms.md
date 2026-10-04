@@ -1,7 +1,5 @@
 # One I.T. Pro — Technology for Law Firms
 
-> Draft agent resource for the law-firm campaign. This file is not deployed or linked from the landing page. Confirm a Cloudflare delivery mechanism before publishing it.
-
 ## Audience
 
 Small and midsize law firms in Chicagoland and the Greater Midwest. The page addresses firms that depend on responsive client communication, confidential information, Microsoft 365, secure collaboration and dependable everyday technology. It is not limited to any one practice area.
