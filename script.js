@@ -1,4 +1,4 @@
-// Campaign hooks emit local CustomEvents only. Connect an approved analytics tool later.
+// Campaign hooks emit local CustomEvents and forward conversion interactions to GA4.
 const ATTRIBUTION_KEYS = ["utm_source", "utm_medium", "utm_campaign", "utm_content", "landing_page"];
 const CANONICAL_LANDING_PAGE = "https://law.oneitpro.com/";
 const CORPORATE_CONTACT = "https://www.oneitpro.com/#contact";
@@ -22,6 +22,14 @@ try {
   // The page and conversion paths still work when storage is unavailable.
 }
 if (!attribution.landing_page) attribution.landing_page = CANONICAL_LANDING_PAGE;
+
+document.addEventListener("oitp:analytics", ({ detail }) => {
+  // GA4 records the page view automatically. Send only interaction events here.
+  if (detail.event === "landing_page_visit" || typeof window.gtag !== "function") return;
+  const parameters = {};
+  if (detail.service) parameters.service = detail.service;
+  window.gtag("event", detail.event, parameters);
+});
 
 function emitEvent(name, extra = {}) {
   document.dispatchEvent(new CustomEvent("oitp:analytics", {
