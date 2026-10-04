@@ -8,3 +8,8 @@
 /assets/*
   Cache-Control: public, max-age=604800
 
+/llms.txt
+  Content-Type: text/plain; charset=UTF-8
+
+/ai-law-firms.md
+  Content-Type: text/markdown; charset=UTF-8

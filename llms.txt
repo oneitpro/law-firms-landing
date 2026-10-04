@@ -1,0 +1,15 @@
+# One I.T. Pro for Law Firms
+
+law.oneitpro.com is a One I.T. Pro resource and campaign experience for law firms. One I.T. Pro is the company that operates this site.
+
+## Law-firm resource
+- [Technology for law firms](https://law.oneitpro.com/ai-law-firms.md): Audience, problems, services, geography, contact options and compliance limitations.
+
+## One I.T. Pro
+- [Main website](https://www.oneitpro.com/)
+- [Business communication](https://www.oneitpro.com/business-communication)
+- [Business collaboration](https://www.oneitpro.com/business-collaboration)
+- [Cybersecurity](https://www.oneitpro.com/cybersecurity)
+- [AI consulting](https://www.oneitpro.com/ai-consulting)
+- [Everyday IT support](https://www.oneitpro.com/business-it-support)
+- [Existing customer support](https://support.oneitpro.com/)
